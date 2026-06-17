@@ -4,7 +4,7 @@
 // 0101
 // 10101
 
-//Time- O(n*2)
+//Time- O(n^2)
 //Space-O(1)
 
 import java.util.Scanner;

@@ -4,6 +4,8 @@
 // 1234  4321
 // 1234554321
 
+// Time - O(n^2)
+
 
 import java.util.Scanner;
 
@@ -15,7 +17,8 @@ public class Pattern6 {
                 System.out.print(j);
             }
 
-            for(int k = 1; k <= (n*2) - (i*2); k++){
+            int spaces = 2 * (n - i);
+            for(int k = 1; k <= spaces; k++){
                 System.out.print(" ");
             }
 
