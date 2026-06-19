@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Pattern9 {
 
-    static void printPattern(int n){
+    static void printPattern(int n){   //Brute force method
     //first half
     for(int i = 1; i <= n; i++){
         for(int j = n; j >= i; j--){
@@ -47,7 +47,7 @@ public class Pattern9 {
     }
 }
 
-static void printRow(int stars, int spaces){
+static void printRow(int stars, int spaces){  //helper method
     for(int i = 0; i < stars; i++){
         System.out.print("*");
     }
@@ -62,7 +62,7 @@ static void printRow(int stars, int spaces){
     System.out.println();
 }
 
-static void printPatternHelperMethod(int n){
+static void printPatternHelperMethod(int n){  //using helper method to print pattern
     for(int i = 1; i <= n; i++){
         printRow(n - i + 1, 2 * i - 2);
     }
